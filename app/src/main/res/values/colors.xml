@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D8D8D8</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorPrimaryDarkSplash">#FEFBEC</color>
+    <color name="colorAccent">#000000</color>
+    <color name="colorAccentForDarkThem">#FFFFFF</color>
+    <color name="colorBackSplash">#FEFBEC</color>
+    <color name="backPoems">#D8D8D8</color>
+    <color name="booksRecyclerName">#E6E6E6</color>
+    <color name="booksRecyclerImage">#EEEEEE</color>
+    <color name="poemTextTitle">#363636</color>
+    <color name="colorBackPoemTexDark">#2c2c2c</color>
+    <color name="colorBackPoemDark">#686868</color>
+    <color name="colorBackToolbarDark">#777777</color>
+    <color name="colorOfButtonSearchBox">#606060</color>
+    <color name="colorOfBasedOn">#C9C9C9</color>
+    <color name="colorBorder">#B6B0B0</color>
+    <color name="colorCardTeam">#f1f1f1</color>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PoetsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/poet_container_toolbar">
+        <include layout="@layout/main_toolbar" android:id="@+id/poet_toolbar"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/poet_container_toolbar"
+        android:layout_above="@id/poet_bottom_navigation"
+        android:id="@+id/poet_frame"/>
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:elevation="5dp"
+        android:background="#ffffff"
+        app:tabUnboundedRipple="true"
+        app:tabIndicatorHeight="0dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/poet_bottom_navigation"/>
+
+</RelativeLayout>

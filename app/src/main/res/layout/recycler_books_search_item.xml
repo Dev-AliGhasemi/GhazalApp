@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:id="@+id/recycler_books_search_card"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="110dp"
+            android:id="@+id/recycler_books_search_image"
+            android:layout_alignParentRight="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler_books_search_name"
+            android:text="فاضل نظری"
+            android:layout_toLeftOf="@id/recycler_books_search_image"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+
+            android:layout_marginRight="10dp"
+            android:layout_alignTop="@id/recycler_books_search_image"
+            android:textSize="@dimen/books_poet_name_text"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/recycler_books_search_pen"
+            android:src="@mipmap/pen"
+            android:layout_alignRight="@id/recycler_books_search_name"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler_books_search_author"
+            android:text="فاضل"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            android:layout_toLeftOf="@id/recycler_books_search_pen"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/recycler_books_search_printer"
+            android:src="@mipmap/printer"
+            android:textColor="@android:color/black"
+            android:layout_alignRight="@id/recycler_books_search_name"
+            android:layout_alignBottom="@id/recycler_books_search_image" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler_books_search_publisher"
+            android:text="فاضل"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            android:layout_toLeftOf="@id/recycler_books_search_printer"
+            android:layout_alignBottom="@id/recycler_books_search_image"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

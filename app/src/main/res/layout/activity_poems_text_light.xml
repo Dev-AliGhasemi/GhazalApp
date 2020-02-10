@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@color/booksRecyclerImage"
+    tools:context=".BooksActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:id="@+id/poems_container_toolbar">
+        <include layout="@layout/books_toolbar" android:id="@+id/poems_text_toolbar"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="9"
+        android:layout_above="@id/poems_text_card_control"
+        android:background="@color/booksRecyclerImage">
+        <include layout="@layout/activity_poems_text_card_light" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        android:layout_margin="10dp"
+        android:id="@+id/poems_text_card_control"
+        android:background="@color/booksRecyclerImage">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_file_download"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:onClick="poemsTextClickListener"
+                android:id="@+id/poems_text_image_download"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_bookmark_border"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/poems_text_image_download"
+                android:onClick="poemsTextClickListener"
+                android:id="@+id/poems_text_image_bookmark"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_replay"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/poems_text_image_bookmark"
+                android:onClick="poemsTextClickListener"
+                android:id="@+id/poems_text_image_reply"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_play"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/poems_text_image_reply"
+                android:onClick="poemsTextClickListener"
+                android:id="@+id/poems_text_image_play"/>
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/poems_text_image_play"
+                android:layout_toLeftOf="@id/poems_text_times"
+                android:id="@+id/poems_text_seek_bar"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:text="0:00/0:00"
+                android:textSize="@dimen/spinner_fonts"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:id="@+id/poems_text_times"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</LinearLayout>

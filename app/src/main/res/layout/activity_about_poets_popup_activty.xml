@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutPoetsPopupActivity"
+    android:layout_above="@id/about_poem_ok"
+    android:layout_alignParentTop="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/about_poem_image"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/about_poem_image"
+            android:text="asdfasdfsd"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:id="@+id/about_poem_title"
+            android:textSize="@dimen/books_poet_name_text"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/about_poem_title"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="یبلیبلیبلیبلکیمبلنیسکبملنیسبکلمنسیبکگلنیسکبگلنسیکبملنسیکبملنسیکبلمگنیسبکگلمنیسبکگلم"
+            android:textAlignment="inherit"
+            android:gravity="right"
+            android:layout_marginTop="10dp"
+            android:id="@+id/about_poem_text" />
+    </RelativeLayout>
+</ScrollView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="باشه"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn_try_again_selector"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/about_poem_ok"/>
+</RelativeLayout>

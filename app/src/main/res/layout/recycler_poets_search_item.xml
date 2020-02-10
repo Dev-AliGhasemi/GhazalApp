@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:id="@+id/recycler_poets_search_card"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/recycler_poets_search_image"
+            android:layout_alignParentRight="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler_poets_search_name"
+            android:text="فاضل نظری"
+            android:layout_toLeftOf="@id/recycler_poets_search_image"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginRight="10dp"
+            android:layout_alignTop="@id/recycler_poets_search_image"
+            android:textSize="@dimen/books_poet_name_text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler_poets_search_date_fake"
+            android:layout_below="@id/recycler_poets_search_name"
+            android:layout_above="@id/recycler_poets_search_location"
+            android:text="تاریخ تولد :‌"
+            android:textColor="@android:color/black"
+            android:layout_alignRight="@id/recycler_poets_search_name"
+            android:gravity="center"
+            android:textSize="@dimen/recycler_poem_text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler_poets_search_date"
+            android:text="تاریخ تولد :‌"
+            android:textColor="@android:color/black"
+            android:layout_toLeftOf="@id/recycler_poets_search_date_fake"
+            android:layout_below="@id/recycler_poets_search_name"
+            android:layout_above="@id/recycler_poets_search_location"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:textSize="@dimen/recycler_poem_text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler_poets_search_location"
+            android:text="محل تولد :‌"
+            android:textColor="@android:color/black"
+            android:layout_alignRight="@id/recycler_poets_search_name"
+            android:layout_alignBottom="@id/recycler_poets_search_image"
+            android:textSize="@dimen/recycler_poem_text"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

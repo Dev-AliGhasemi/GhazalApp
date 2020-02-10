@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="text_array">
+        <item>درباره ما</item>
+        <item>بررسی بروزرسانی</item>
+        <item>نظر دادن به برنامه</item>
+    </string-array>
+</resources>

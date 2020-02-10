@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">غزل</string>
+    <string name="iran_sans_bold">fonts/iran_sans_bold.ttf</string>
+    <string name="iran_sans_regular">fonts/iran_sans_regular.ttf</string>
+    <string name="b_nazanin">fonts/nazanin.ttf</string>
+    <string name="nastaligh">fonts/nastaligh.ttf</string>
+    <string name="staticUrl">https://ketabgfx.ir/WebService/WebService/WebService.php</string>
+    <string name="textAboutGhazal">باسلام اول از همه تشکر بابت انتخابتون که برنامه غزل را انتخاب کردید. غزل" در لغت به معنای حدیث عاشقی هست و در قرن ششم که قصیده در حال زوال بود غزل رشد کرد. در غزل منظور اصلی غالبا معشوق است و شاعر با معشوق سخن می گوید.اما ما این برنامه را آماده کردیم تا در کنار تمامی سختی هایی که امروزه مردم تحمل می کنند بتوانند لحظاتی شیرین و دل چسپ با غزل داشته باشند و اندکی فشار سختی ها کاسته شود.این قدمی کوچکی بود که می توانستیم برای شما برداریم پس منتظر نظرات زیبای شما هستیم.</string>
+    <string name="textAboutVira">تیم توسعه نرم افزاری ویرا از افرادی پر انرژی و خلاق تشکیل شده که ریز به ریز این برنامه مدیون زحمات این افراد می باشد . هدف تیم ما از توسعه نرم افزار ساخت یه زندگی بهتر نه برای ایرانی ها بلکه  برای همه هست و در آخر از تک تک افرادی که در تهیه این برنامه تلاش کردند سپاس گذاریم.</string>
+</resources>
